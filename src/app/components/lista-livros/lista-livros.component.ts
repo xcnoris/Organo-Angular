@@ -32,10 +32,31 @@ export class ListaLivrosComponent implements OnInit{
     })
 
     this.generos = [
-      {
-        id: 'Poesia',
-        value: "Poesia",
-        livros: this.livrosPorGenero.get("Poesia")  ?? []
+   
+        {
+        id: 'romance',
+        value: "Romance",
+        livros: this.livrosPorGenero.get("romance") ?? []
+      },
+      { 
+        id: 'misterio', 
+        value: 'Mistério', 
+        livros: this.livrosPorGenero.get("misterio") ?? [] 
+      },
+      { 
+        id: 'fantasia', 
+        value: 'Fantasia', 
+        livros: this.livrosPorGenero.get("fantasia") ?? [] 
+      },
+      { 
+        id: 'ficcao-cientifica', 
+        value: 'Ficção Científica', 
+        livros: this.livrosPorGenero.get("ficcao-cientifica") ?? [] 
+      },
+      { 
+        id: 'tecnicos', 
+        value: 'Técnicos', 
+        livros: this.livrosPorGenero.get("tecnicos") ?? [] 
       }
     ]
   }
